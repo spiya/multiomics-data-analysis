@@ -1,0 +1,25 @@
+# Ignore data and results
+#data/
+#results/
+
+# Ignore configs and extras
+#config/
+#extras/
+
+# Ignore all scripts by default
+scripts/*
+
+# Allow specific scripts when ready (remove # to upload)
+# !scripts/analysis.py
+# !scripts/utils.py
+
+# Ignore all scripts by default
+results/*
+
+# Common junk
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
