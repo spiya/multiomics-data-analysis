@@ -1,25 +1,22 @@
-# Ignore data and results
-#data/
-#results/
+# Ignore data and results (uncomment if you don’t want them in repo)
+# data/
+# results/
 
 # Allow configs and extras
-!config/
-!extras/
+!config/**
+!extras/**
 
 # Ignore all scripts by default
 scripts/*
 
-# Allow specific scripts when ready (remove # to upload)
+# Allow specific scripts
 !scripts/funct
-!scripts/s01_07_prep.py
 !scripts/s01_07_prep.py
 !scripts/s08_fuse.py
 !scripts/s09_cluster.py
 !scripts/s10_clinical.py
-!scripts/s01_07_prep.py
-!scripts/s01_07_prep.py
 
-# Ignore all scripts by default
+# Ignore all results by default
 results/*
 
 # Common junk
@@ -28,4 +25,3 @@ results/*
 *.bak
 *.swp
 .DS_Store
-
