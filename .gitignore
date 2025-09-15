@@ -2,16 +2,22 @@
 #data/
 #results/
 
-# Ignore configs and extras
-#config/
-#extras/
+# Allow configs and extras
+!config/
+!extras/
 
 # Ignore all scripts by default
 scripts/*
 
 # Allow specific scripts when ready (remove # to upload)
-# !scripts/analysis.py
-# !scripts/utils.py
+!scripts/funct
+!scripts/s01_07_prep.py
+!scripts/s01_07_prep.py
+!scripts/s08_fuse.py
+!scripts/s09_cluster.py
+!scripts/s10_clinical.py
+!scripts/s01_07_prep.py
+!scripts/s01_07_prep.py
 
 # Ignore all scripts by default
 results/*

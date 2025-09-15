@@ -29,9 +29,7 @@ brca_multiomics_modular/
 │  ├─ s11_de.py                # Step 11: differential features by cluster
 │  ├─ s12_classify.py          # Step 12: optional classifiers
 │  ├─ s13_biomarkers.py        # Step 13: integrated biomarker ranking
-│  ├─ Biomarker_dotplot.py     # extra: Scanpy-like dotplots for biomarkers
-│  └─ Multiome_heatmap.py      # extra: comprehensive multi-omic heatmap
-└─ scripts/brca_mo/            # lightweight “package” of helpers (io, preprocess, snf, etc.)
+└─ scripts/brca_mo/            # lightweight “package” of helpers
 ```
 
 ---
