@@ -1,0 +1,48 @@
+preprocess:
+  rna_log2: false         # set true if your RNA is raw counts or non-log scale
+  lnc_log2: false         # usually false; set true only if needed
+
+filters:
+  rna_filter_q: 0.8      # keep top 20% most variable genes (speed for clustering)
+  lnc_filter_q: 0.8
+  meth_filter_q: 0.8
+  cnv_filter_q: 0.8
+  mut_min_prevalence: 0.01  # keep genes mutated in >=1% of samples
+  # mut_min_samples: 5       # (alternative) require >=5 mutated samples
+
+snf:
+  K: 10
+  t: 10
+  mu: 0.5
+  skip_affinities: false     # true = Step 1–7 caches matrices only (no affinities)
+  weights:                   # used by Step 8 fallback if SNF lib isn’t available
+    rna: 1.0
+    lncrna: 1.0
+    meth: 1.0
+    mut: 1.0
+    cnv: 1.0
+
+cluster:
+  k: 5
+  k_max: 8
+
+gsea:
+  enabled: false
+  gmt: "data/h.all.v2025.1.Hs.symbols.gmt"  # or c5.all... for GO
+  min_size: 10
+  max_size: 3000
+
+classifiers:
+  enabled: false            # turn on when you want Step 12
+
+biomarkers:
+  weights: {rna: 1.0, lnc: 1.0, meth: 1.0, mut: 0.5, cnv: 1.0, prot: 1.0}
+
+storage:
+  save_parquet: false       # true = also write .parquet for faster reads
+
+modalities: ['rna','lncrna','meth','mut']   # add 'cnv' when your CNV matrix is ready
+
+align:
+  id_level: tcga_sample   # or tcga_patient
+  min_samples: 30

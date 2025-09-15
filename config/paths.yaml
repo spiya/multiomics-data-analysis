@@ -1,0 +1,8 @@
+raw:
+  rna: "C:/Users/Utsala/Desktop/Sarbottam/Final/multiomics-data-analysis/data/brca_tcga_mRNA.expr.csv"
+  lncrna: "C:/Users/Utsala/Desktop/Sarbottam/Final/multiomics-data-analysis/data/brca_tcga_lncRNA.expr.csv"
+  meth: "C:/Users/Utsala/Desktop/Sarbottam/Final/multiomics-data-analysis/data/brca_tcga_meth.beta.csv"
+  mut: "C:/Users/Utsala/Desktop/Sarbottam/Final/multiomics-data-analysis/data/brca_tcga_mut.status.csv"
+  cnv: "C:/Users/Utsala/Desktop/Sarbottam/Final/multiomics-data-analysis/data/brca_tcga_cnv.gene_matrix.csv"
+  clinical: "C:/Users/Utsala/Desktop/Sarbottam/Final/multiomics-data-analysis/data/brca_tcga_clin.info.csv"
+outdir: "C:/Users/Utsala/Desktop/Sarbottam/Final/multiomics-data-analysis/results/"
