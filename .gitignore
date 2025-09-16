@@ -2,6 +2,20 @@
 data/
 results/
 
+# Allow placeholder to keep results/ visible
+!results/.gitkeep
+
+# Allow selected figures in results
+!results/figures/
+!results/figures/multiome_heatmap.png
+!results/figures/clf_confusion_matrix.png
+!results/figures/clf_confusion_matrix_argmax_clusters.png
+
+# Allow selected tables in results
+!results/tables/
+!results/tables/clf_cv_summary.txt
+!results/tables/clf_cv_summary_clusters.txt
+
 # Allow configs and extras
 !config/**
 !extras/**
