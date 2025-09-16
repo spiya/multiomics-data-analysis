@@ -22,14 +22,14 @@ brca_multiomics_modular/
 │  ├─ paths.yaml               # where your inputs live and where outputs go (outdir)
 │  └─ params.yaml              # algorithm settings, filters, modalities to use, GSEA options
 ├─ scripts/
-│  ├─ s01_07_prep_v3.py        # Steps 1–7: load → align → preprocess → affinities
+│  ├─ s01_07_prep.py           # Steps 1–7: load → align → preprocess → affinities
 │  ├─ s08_fuse.py              # Step 8: SNF fusion
 │  ├─ s09_cluster.py           # Step 9: clustering on fused network
 │  ├─ s10_clinical.py          # Step 10: clinical associations (+ optional survival)
-│  ├─ s11_de.py                # Step 11: differential features by cluster
-│  ├─ s12_classify.py          # Step 12: optional classifiers
+│  ├─ s11_de.py                # Step 11: Differential features by cluster
+│  ├─ s12_classify.py          # Step 12: Classifiers
 │  ├─ s13_biomarkers.py        # Step 13: integrated biomarker ranking
-└─ scripts/brca_mo/            # lightweight “package” of helpers
+└─ scripts/brca_mo/            # Functions
 ```
 
 ---
