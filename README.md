@@ -1,4 +1,4 @@
-# BRCA Multi-Omics Modular Pipeline
+# Multi-Omics Modular Pipeline
 
 A modular, scriptable pipeline to discover **molecular subtypes** and **biomarkers** in breast cancer from multi-omics data (mRNA, lncRNA, DNA methylation, mutations, ±CNV), with optional **survival**, **classifiers**, and **GSEA**.  
 It is designed to run step-by-step, cache intermediate results, and let you re-run only the parts you change.
